@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head> 
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<script src="https://kit.fontawesome.com/aef75d4f96.js" crossorigin="anonymous"></script><!--Ikonien linkit-->
+<title>Mira Iivanainen</title>
+<meta charset="UTF-8">
+<meta name="author" content="Mira Iivanainen">
+<meta name="description" content="Portfolio">
+<meta name="keywords" content="HTML, CSS, javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!--Ylös painike-->
+<button onclick="topFunction()" id="button" title="Takaisin Ylös"><i class="fa-solid fa-arrow-up-long"></i></button> 
+<!--Navigointipalkki alkaa-->
+<nav> 
+  <ul>
+  <li><a class="active" href="index.html">Etusivu</a></li>
+  <li><a href="harrastukset.html">Harrastukset </a></li>
+  <li><a href="portfolio.html">Portfolio</a></li>
+  </ul>
+</nav> 
+<!--Navigointipalkki loppuu-->
+<!--Header alkaa-->
+<header class="etusivu_header">
+ <div class="logo">
+  <h1>Mira Iivanainen</h1>
+  <p style="letter-spacing: normal; font-size: 0.6em;"><strong>Lukemalla ee uimaan opi, vetteen se on mäntävä </strong></p>
+ </div>
+</header> 
+<!--Header loppuu-->
+<!--Artikkeli osio alkaa-->
+<article> 
+<div class="etusivu">
+  <h2 style="font-size: 1.5em;">Kuka olen</h2>
+  <p> <br>
+      Olen Mira, Sorsakosken kylältä lähtöisin, nykyään Kuopion Pihkainmäessä asuva paljasjalkainen savolainen. <br> 
+      Asumme omakotitalossa luonnonsuojelualueen ympäröimänä mieheni sekä <br> koiramme Tuhon ja kahden kissamme Mörön ja Mätön kanssa. <br> 
+      Rakastan luontoa ja eläimiä yli kaiken ja vietänkin suurimman osan vapaa ajastani <br> metsässä lenkkeillen ja kuunnellen metsän ääniä.<br>
+      Vastapainoksi luontohulluudelle, lempi harrastukseni on moottoripyöräily, <br>yksi parhaista tavoista lievittää stressiä ja päästä tuulettamaan ajatuksia.<br>
+      Fyysisestä kunnosta pidän myös huolta treenaamalla säännöllisen epäsäännöllisesti. <br>
+      Olen posiviitinen, rempseä ja huumorintajuinen, aina hieman pilkettä silmäkulmassa. <br>
+      Elämän ei tarvitse olla niin vakavaa. </p><br>
+
+  <h2 style="font-size: 1.5em;">Työ minä</h2>
+  <p> Olen oma-aloitteinen, tunnollinen sekä tehokas. <strong>Vahvuuksiani</strong> on nopea 
+      oppimis- sekä sopeutumiskyky ja ymmärrän erilaisia tietoteknisiä ohjelmia nopeasti. Olen myös loistava organisoimaan.
+      Tykkään itsenäisestä työstä, mutta ryhmässä työskentelykään ei tuota ongelmia.
+      Tällä hetkellä työskentelen Keskon terminaalissa logistiikkatyöntekijänä sekä toimistotyöntekijänä. <br>
+      <br>Tavoitteenani on päästä opiskelemaan ICT-insinööriksi töiden ohella.<br> 
+      Minulla on monipuolinen työtausta ja kokemusta monelta eri alalta, 
+      jokaisesta työpaikasta olen oppinut paljon uutta ja hyödyntänyt oppimaani sitten muissa paikoissa.<br> 
+      Teen aina työni parhaalla mahdollisella tavalla ja pyrin päivittäin  kehittämään osaamistani. <br>
+      Olen tiedonjanoinen ja haluan oppia päivittäin uusia asioita, niin töissä kuin vapaa-ajalla.   
+  </p>
+</div>
+</article>
+<!--Artikkeli osio päättyy-->
+<!--Footer-->
+<footer>
+  <i style="padding-right: 0.5em;" class="fa-solid fa-mobile-retro"></i>040 5855829
+  <a style="color: #F0EBEB;" href="mailto:mira.iivanainen@gmail.com">
+  <i class="fa-solid fa-envelope" style="padding-left:1em; padding-right: 0.5em;"></i></a>mira.iivanainen@gmail.com 
+  <a style="color: #F0EBEB;" href="https://www.linkedin.com/in/mira-iivanainen-104756240/" target="_blank">
+  <i style="padding-left:1em;" class="fa-brands fa-linkedin-in"></i></a>
+</footer>
+<!-- page loppuu-->
+
+<script>
+//Ylös painikkeen javascript
+mybutton = document.getElementById("button");
+  
+// Kun scrollataan 20px alas, painike ilmestyy
+window.onscroll = function() {scrollFunction()};
+  
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+   {
+    mybutton.style.display = "block";
+  } 
+  else {
+    mybutton.style.display = "none";
+    }
+  }
+  // Eri nettisivuille toimivuuden varmistus
+  function topFunction() {
+    document.body.scrollTop = 0; // Safari
+    document.documentElement.scrollTop = 0; // Chrome, Firefox, IE ja Opera
+  }
+</script>
+</body>
+</html>
